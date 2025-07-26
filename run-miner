@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd
-cd ../etc/mobile-mining
+cd ccminer
 python3 main.py
