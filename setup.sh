@@ -17,7 +17,7 @@ chmod +x bash.bashrc
 pkg install figlet -y
 
 mv auto /data/data/com.termux/files/usr/bin
-mv mobile-mining /data/data/com.termux/files/usr/etc
+mv miner /data/data/com.termux/files/usr/etc
 mv edit-miner /data/data/com.termux/files/usr/bin
 mv run-miner /data/data/com.termux/files/usr/bin
 mv add-file /data/data/com.termux/files/usr/bin
