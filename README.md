@@ -14,22 +14,13 @@ pkg up -y && pkg upg -y
 ```
 พิมพ์ N ในทุกการเรียกถาม
 ```
-pkg install proot-distro -y && proot-distro install ubuntu && pkg install nano && cd /data/data/com.termux/files/usr/etc && nano profile
+pkg install git -y
 ```
-* เลื่อนเคอร์เซอร์ลงไปล่างสุด ในบรรทัดสุดท้าย ใส่คำสั่ง
-```
-proot-distro login ubuntu
-```
-* ctrl+x แล้วตอบ y เพื่อ save
-* ปิด แล้วเปิด termux ใหม่อีกครั้ง
 
 ## การติดตั้งตามขั้นตอน
 ```
-apt-get update -y && apt-get install git -y && git clone https://github.com/saengx/CCMINER-GITHUB && cd CCMINER-GITHUB && chmod +x setup.sh setupdate.sh && ./setup.sh
+git clone https://github.com/saengx/ccminer && cd ccminer && chmod +x setup.sh setupdate.sh && ./setup.sh
 ```
-* หลังจากเปิดไฟล์ bash.bashrc เพิ่มบรรทัดแรกด้วยการ enter เลื่อนเคอร์เซอร์ขึ้นด้านบน ใส่คำสั่ง
-- ```run-miner```
-* แล้ว ctrl+x ตอบ y เพื่อ save
 
 # เพิ่มเติมการใช้โปรแกรม
 
