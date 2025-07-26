@@ -40,7 +40,7 @@ CXX=clang++ CC=clang ./build.sh
 
 chmod +x ccminer
 
-cd && cd /data/data/com.termux/files/usr/etc/miner/ccminer
-mv ccminer /data/data/com.termux/files/home/ccminer
+#cd && cd /data/data/com.termux/files/usr/etc/miner/ccminer
+#mv ccminer /data/data/com.termux/files/home/ccminer
 
 run-miner
