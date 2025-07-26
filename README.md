@@ -10,7 +10,7 @@ termux-setup-storage
 * กดยอมรับ
 
 ```
-pkg up -y && pkg upg -y
+pkg up -y
 ```
 พิมพ์ N ในทุกการเรียกถาม
 ```
