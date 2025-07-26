@@ -2,6 +2,7 @@
 
 pkg update -y
 pkg install libjansson build-essential clang binutils python3 nano wget -y
+pip3 install progress
 
 chmod +x auto
 chmod +x edit-miner
