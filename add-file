@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd
-cd ../etc/mobile-mining
+cd ../usr/etc/miner
 python3 addip.py
