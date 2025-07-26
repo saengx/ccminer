@@ -1,4 +1,4 @@
-import os, json, requests
+import os, json
 
 
 def banner():
