@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd
-cd ccminer
+cd ../usr/etc/miner
 python3 main.py
