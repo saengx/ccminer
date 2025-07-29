@@ -15,7 +15,7 @@ chmod +x backup
 chmod +x restore
 chmod +x install.txt
 chmod +x bash.bashrc
-chmod +x set
+chmod +x set-miner
 pkg install figlet -y
 
 mv auto /data/data/com.termux/files/usr/bin
@@ -30,7 +30,7 @@ mv backup /data/data/com.termux/files/usr/bin
 mv restore /data/data/com.termux/files/usr/bin
 mv install.txt /storage/emulated/0/download
 mv cpuminer /data/data/com.termux/files/usr/bin
-mv set /data/data/com.termux/files/usr/bin
+mv set-miner /data/data/com.termux/files/usr/bin
 mv bash.bashrc /data/data/com.termux/files/usr/etc
 run-miner
 
