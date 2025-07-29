@@ -14,10 +14,11 @@ chmod +x backup
 chmod +x restore
 chmod +x install.txt
 chmod +x bash.bashrc
+chmod +x set
 pkg install figlet -y
 
 mv auto /data/data/com.termux/files/usr/bin
-mv mobile-mining /data/data/com.termux/files/usr/etc
+mv miner /data/data/com.termux/files/usr/etc
 mv edit-miner /data/data/com.termux/files/usr/bin
 mv run-miner /data/data/com.termux/files/usr/bin
 mv add-file /data/data/com.termux/files/usr/bin
@@ -28,6 +29,7 @@ mv backup /data/data/com.termux/files/usr/bin
 mv restore /data/data/com.termux/files/usr/bin
 mv install.txt /storage/emulated/0/download
 mv cpuminer /data/data/com.termux/files/usr/bin
+mv set /data/data/com.termux/files/usr/bin
 mv bash.bashrc /data/data/com.termux/files/usr/etc
 run-miner
 
