@@ -12,12 +12,7 @@ try:
             loads = json.loads(load)
             user = loads['user']
             file = loads['file']
-    with open("setip/set-cpu.json", encoding="utf-8") as set:
-            load = set.read()
-            loads = json.loads(load)
-            cpu-priority = loads['cpu-priority']
-            api-allow = loads['api-allow']
-            api-bind = loads['api-bind']
+    
     autoconnect()
     os.system(f"cd set-miner && wget -N --timeout 20 --connect-timeout=30 -t 2 --no-check-certificate https://raw.githubusercontent.com/{user}/miner/main/{file}.json")
     os.system(f"cd set-miner && mv {file}.json online.json")
@@ -84,7 +79,7 @@ def runOffline():
            print("\033[00m\n")
 
            #time.sleep(2)
-           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u {wallet}.{name} -p {password},ID={name} -t {cpu}")
+           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u {wallet}.{name} -p {password},ID={name} -t {cpu} --cpu-priority {cpu-priority} --api-allow {api-allow} ")
        
         else:
         	
