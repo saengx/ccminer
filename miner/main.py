@@ -43,7 +43,7 @@ def runOffline():
         with open("setip/set-cpu.json", encoding="utf-8") as set:
             load = set.read()
             loads = json.loads(load)
-            cpu-priority = loads['cpu-priority']
+            cpupriority = loads['cpu-priority']
             api-allow = loads['api-allow']
             api-bind = loads['api-bind']
         with open("set-miner/online.json", encoding="utf-8") as set:
@@ -80,7 +80,7 @@ def runOffline():
 
            os.system(f"python3 cpu.py")          
            #time.sleep(2)
-           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u {wallet}.{name} -p {password},ID={name} -t {cpu} --cpu-priority {cpu-priority} --api-allow {api-allow} --api-bind={api-bind}")
+           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u {wallet}.{name} -p {password},ID={name} -t {cpu} --cpu-priority {cpupriority} --api-allow {api-allow} --api-bind={api-bind}")
        
         else:
         	
@@ -89,7 +89,7 @@ def runOffline():
 
          os.system(f"python3 cpu.py") 
          #time.sleep(2)
-         os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u {wallet}.{name} -p {password} -t {cpu} --cpu-priority {cpu-priority} --api-allow {api-allow} --api-bind={api-bind}")
+         os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u {wallet}.{name} -p {password} -t {cpu} --cpu-priority {cpupriority} --api-allow {api-allow} --api-bind={api-bind}")
     except:
         push = {'pool': '','wallet': '','pass': ''}
         with open("set-miner/{'file'}.json", "w") as set:
