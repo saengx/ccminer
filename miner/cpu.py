@@ -1,6 +1,5 @@
 import psutil
 import os
-import cpuinfo
 import platform
 
 cpu_info = platform.processor()
