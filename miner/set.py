@@ -1,14 +1,12 @@
 import os, time, json
-from config import banneredit
+from config import bannerup
 from multiprocessing import cpu_count
 
-
-cpu_thread = cpu_count()
 
 
 def setminer():
 
-   banneredit()
+   bannerup()
    try:
        print("0-5 \033[93mปกติ 3\033[00m")
        cpu-priority = int(input("[cpu-priority]: ")
