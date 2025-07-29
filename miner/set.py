@@ -11,7 +11,7 @@ def setminer():
    banneredit()
    try:
        print("0-5 \033[93mปกติ 3\033[00m")
-       cpu-priority = input("[cpu-priority]: ")
+       cpu-priority = int(input("[cpu-priority]: ")
        print("\033[35m-----------------------------------------\033[0m")
 
        print(f"ค่า full-acess ip \033[93mเช่น 192.168.1.0/24\033[00m")
