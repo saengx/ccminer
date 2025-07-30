@@ -25,9 +25,9 @@ def setminer():
             time.sleep(3)
             os.system("set")
    push = {
-          'cpupriority': cpu-priority,
-          'apiallow': api-allow,
-          'apibind' : api-bind
+          'cpu-priority': cpupriority,
+          'api-allow': apiallow,
+          'api-bind' : apibind
           }
    with open("setip/set-cpu.json", "w") as set:
      json.dump(push, set, indent=4)
