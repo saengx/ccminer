@@ -10,11 +10,7 @@ termux-setup-storage
 * กดยอมรับ
 
 ```
-pkg up -y
-```
-พิมพ์ N ในทุกการเรียกถาม
-```
-pkg install git -y
+yes | pkg update && yes | pkg upgrade && pkg install git -y && git clone https://github.com/saengx/ccminer && cd ccminer && chmod +x setupdate.sh setup.sh && ./setup.sh
 ```
 
 ## การติดตั้งตามขั้นตอน
