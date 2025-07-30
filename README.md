@@ -13,11 +13,6 @@ termux-setup-storage
 yes | pkg update && yes | pkg upgrade && pkg install git -y && git clone https://github.com/saengx/ccminer && cd ccminer && chmod +x setupdate.sh setup.sh && ./setup.sh
 ```
 
-## การติดตั้งตามขั้นตอน
-```
-git clone https://github.com/saengx/ccminer && cd ccminer && chmod +x setup.sh setupdate.sh && ./setup.sh
-```
-
 # เพิ่มเติมการใช้โปรแกรม
 
 ## กรณีหากเป็น zergpool การใส่password ไม่ต้องใส่ ID=ชื่อ ระบบจะทำการaddใส่ให้อัตโนมัติ
