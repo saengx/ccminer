@@ -33,7 +33,7 @@ def setminer():
      json.dump(push, set, indent=4)
 
 while True:
-  banneredit()
+  bannerup()
   setminer()
   os.system("run-miner")     
   break
