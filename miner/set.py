@@ -9,15 +9,15 @@ def setminer():
    bannerup()
    try:
        print("0-5 \033[93mปกติ 3\033[00m")
-       cpu-priority = int(input("[cpu-priority]: ")
+       cpu-priority = input("[cpu-priority]: ")
        print("\033[35m-----------------------------------------\033[0m")
 
        print(f"ค่า full-acess ip \033[93mเช่น 192.168.1.0/24\033[00m")
-       api-allow = int(input("[api-allow]: "))
+       api-allow = input("[api-allow]: ")
        print("\033[35m-----------------------------------------\033[0m")
 
        print(f"ค่า bind ip:port \033[93mเช่น 0.0.0.0:4068\033[00m")
-       api-bind = int(input("[api-bind]: "))
+       api-bind = input("[api-bind]: ")
        print("\033[35m-----------------------------------------\033[0m")
    except:
             os.system("@cls||clear")
