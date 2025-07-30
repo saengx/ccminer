@@ -1,7 +1,8 @@
 #!/bin/sh
 
 pkg update -y
-pkg install libjansson-dev build-essential clang binutils python3 nano wget -y
+pkg install libjansson build-essential clang binutils python3 nano wget -y
+pip3 install progress psutil
 
 chmod +x auto
 chmod +x edit-miner
@@ -34,12 +35,16 @@ mv bash.bashrc /data/data/com.termux/files/usr/etc
 run-miner
 
 
-cd && cd ../etc/miner/ccminer
+cd && cd /data/data/com.termux/files/usr/etc/miner/ccminer
 chmod +x build.sh
 chmod +x configure.sh
 chmod +x autogen.sh
 CXX=clang++ CC=clang ./build.sh
 
 chmod +x ccminer
+cd
+
+#cd && cd /data/data/com.termux/files/usr/etc/miner/ccminer
+#mv ccminer /data/data/com.termux/files/home/ccminer
 
 run-miner
