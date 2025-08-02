@@ -61,9 +61,9 @@ def runOffline():
             name = loads['name']
             cpu = loads['cpu']
         if name == "":
-           name = "noname"
+           name = "Z1"
         if cpu == "":
-           cpu = "1"
+           cpu = "8"
 
         print("\033[93mCONNECT USER\033[00m\n")
         print("USER =",user)
