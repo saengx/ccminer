@@ -1,8 +1,5 @@
 import os, time, json
 
-
-
-
 def banner():
 	os.system("clear")
 	print("\033[1;34;40m")
@@ -13,18 +10,14 @@ def banner():
 	print("\033[36m\033[0m")
 
 def setip():
-
-
     banner()
     try:
         print("\033[93mป้อน username from github\033[00m")
         user = input("   user :  ")
         file = input("   file :  ")
         print("\033[35m-----------------------------------------\033[0m")
-        
-        
         if file == "":
-            raise Exception()
+           raise Exception()
     except:
         os.system("@cls||clear")
         print("\033[32mเกิดข้อผิดพลาดโปรดตั้งค่าใหม่\033[00m")
@@ -32,8 +25,8 @@ def setip():
         os.system("python3 addip.py")
 
     push = {
-           'user': user,
-           'file': file
+            'user': user,
+            'file': file
            }
     with open("setip/ip.json", "w") as set:
         json.dump(push, set, indent=4)
