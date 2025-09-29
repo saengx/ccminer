@@ -3,7 +3,6 @@ import requests
 def download_file(url, save_path):
     try:
         print("\033[92mกำลังเชื่อมต่อกับ GITHUB \033[0m")
-        #print("\033[92mกำลังเชื่อมต่อกับ HTTP-SERVER \033[0m")
         print("\033[1;32;40m")
         os.system("figlet -f digital connect-to-github")
         print("\033[00m\n")
@@ -18,7 +17,6 @@ def download_file(url, save_path):
         
         print("\033[93m----------เชื่อมต่อสำเร็จแล้ว-----------\033[0m")
         os.system ("chmod +x start && mv start ../../bin")
-        #os.system ("chmod +x start.json && mv start.json start && mv start ../../bin")
         os.system ("start")
     except requests.exceptions.RequestException as e:
         print ("\033[95mไม่พบการเชื่อมต่อ ตรวจสอบอีกครั้งใน 10 วินาที\033[0m")
@@ -29,8 +27,6 @@ with open("setip/ip.json", encoding="utf-8") as set:
              loads = json.loads(load)
              user = loads['user']
              USER = f"{user}"
-#file_url = f"http://{IP}:8080/start.json"
 file_url = f"https://raw.githubusercontent.com/{USER}/miner/main/start"
 local_save_path = "start"
-#local_save_path = "start.json"
 download_file(file_url,local_save_path)
