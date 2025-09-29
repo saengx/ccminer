@@ -4,10 +4,10 @@ cd
 rm -rf ccminer
 git clone https://github.com/saengx/ccminer 
 cd /data/data/com.termux/files/usr/etc/miner/set-miner
-cp -r online.json offline.json /data/data/com.termux/files/usr/etc/ccminer/miner/set-miner
+cp -r online.json offline.json /data/data/com.termux/files/home/ccminer/miner/set-miner
 cd
 cd /data/data/com.termux/files/usr/etc/miner/setip
-cp -r ip.json /data/data/com.termux/files/usr/etc/ccminer/miner/setip
+cp -r ip.json /data/data/com.termux/files/home/ccminer/miner/setip
 cd
 cd /data/data/com.termux/files/usr/etc
 rm -rf miner 
