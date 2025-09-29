@@ -13,7 +13,7 @@ cd /data/data/com.termux/files/usr/etc
 rm -rf miner 
 cd
 cd /data/data/com.termux/files/usr/bin
-rm -rf add-file edit-miner run-miner restore backup set
+rm -rf add-file edit-miner run-miner restore backup
 cd
 cd ccminer 
 chmod +x setupdate.sh
