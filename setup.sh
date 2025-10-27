@@ -33,7 +33,6 @@ mv install.txt /storage/emulated/0/download
 mv info /data/data/com.termux/files/usr/bin
 mv set-miner /data/data/com.termux/files/usr/bin
 mv bash.bashrc /data/data/com.termux/files/usr/etc
-run-miner
 
 
 cd && cd /data/data/com.termux/files/usr/etc/miner/ccminer
