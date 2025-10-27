@@ -16,5 +16,5 @@ cd /data/data/com.termux/files/usr/bin
 rm -rf add-file edit-miner run-miner restore backup
 cd
 cd ccminer 
-chmod +x setupdate.sh
+chmod +x setup.sh setupdate.sh
 sh setupdate.sh
