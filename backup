@@ -2,7 +2,7 @@
 
 cd
 cd /data/data/com.termux/files 
-tar cvfz backup.tar.gz home usr
+tar cvfz ccminer.tar.gz home usr
 cp -r ccminer.tar.gz /storage/emulated/0/download
 rm -rf ccminer.tar.gz
 proot-distro login ubuntu
